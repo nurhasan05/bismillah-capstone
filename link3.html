@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PMB FT UMJ</title>
+	<link rel="stylesheet" type="text/css" href="link3_style.css">
+</head>
+<body>
+	<center ><h2>Pendaftaran Mahasiswa Baru Fakultas Teknik Universitas Muhammadiyah Jakarta</h2></center>
+	<div class="login">
+        <center><h3>Informasi Sekolah</center>
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Asal Sekolah:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+            <div>
+				<label>Jurusan Peminatan</label>
+				<input type="text" name="nomordaftar" id="nomordaftar" />
+			</div>
+            <div>
+				<label>Nilai Ujian Nasional:</label>
+				<input type="text" name="nomorhp" id="nomorhp"  />
+			</div>
+			
+            <div>
+				<label>Tahun Ajaran:</label>
+				
+                <td><select name="tahun_ajaran" id="tahun_ajaran">
+                    <option>Pilih Tahun Ajaran</option>
+                    <option value="2007">2020</option>
+                    <option value="2008">2021</option>
+                    <option value="2009">2022</option>
+                    <option value="2010">2023</option>
+                    </select></td>
+			</div>
+			
+			<div>
+				<input type="submit" value="Selanjutnya" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var alamat = document.getElementById("alamat").value;
+        var nomordaftar = document.getElementById("nomordaftar").value;
+        var TTL = document.getElementById("TTL").value;
+		if (nama != "" && email!="" && alamat !="" && nomordaftar!="" && TTL!="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</html>
